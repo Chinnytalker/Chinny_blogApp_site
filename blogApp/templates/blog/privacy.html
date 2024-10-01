@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+{% for privacy in privacys %}
+<p class="card-text">{{ privacy.privacy | linebreaks }}</p><small>Last Modified {{ privacy.last_updeted }}</small>
+
+{% endfor %}
+
+{% endblock content %}
