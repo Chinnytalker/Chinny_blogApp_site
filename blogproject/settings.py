@@ -133,6 +133,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
+
 STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles/'
 
@@ -165,13 +166,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 django_heroku.settings(locals())
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dseh4nwkz',
-    'API_KEY': '819489763854264',
-    'API_SECRET': 'd7g7GCSx2E6MdBeGZOsGabX0QAM',
-}
-
-DEFAULT_FILE_STORAGE = 'cloundinary_storage.storage.MediaCloudinaryStorage'
-
-MEDIA_URL = 'https://res.cloudinary.com/dseh4nwkz/'
-
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': 'dseh4nwkz',
+#     'API_KEY': '819489763854264',
+#     'API_SECRET': 'd7g7GCSx2E6MdBeGZOsGabX0QAM',
+# }
+#
+# DEFAULT_FILE_STORAGE = 'cloundinary_storage.storage.MediaCloudinaryStorage'
+#
+# MEDIA_URL = 'https://res.cloudinary.com/dseh4nwkz/'
+#
